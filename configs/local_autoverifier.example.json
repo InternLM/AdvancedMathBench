@@ -1,0 +1,20 @@
+{
+  "policy": {
+    "backend": "api",
+    "base_url": "https://YOUR_PROVIDER/v1",
+    "model": "YOUR_PROVER_MODEL",
+    "api_key_env": "POLICY_API_KEY",
+    "generation": {"temperature": 1.0, "max_tokens": 65536}
+  },
+  "verifier": {
+    "backend": "transformers",
+    "model": "debouter/AdvancedMathBench-AutoVerifier",
+    "revision": "2ad58735622f70bbe2f106049bcdf34f5bb93cfd",
+    "model_class": "qwen3_5_moe",
+    "dtype": "bfloat16",
+    "device_map": "auto",
+    "trust_remote_code": true,
+    "chat_template_kwargs": {"enable_thinking": true},
+    "generation": {"temperature": 1.0, "max_tokens": 65536, "top_p": 0.95, "top_k": 20}
+  }
+}

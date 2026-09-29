@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use AdvancedMathBench, please cite the paper below. Citation authors follow the current arXiv record."
+type: software
+title: AdvancedMathBench
+version: 0.1.0
+authors:
+  - name: AdvancedMathBench contributors
+preferred-citation:
+  type: article
+  title: "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification"
+  authors:
+    - family-names: Kong
+      given-names: Lingkai
+    - family-names: Wu
+      given-names: Zijian
+    - family-names: Gu
+      given-names: Yuzhe
+    - family-names: Zhao
+      given-names: Haiteng
+    - family-names: Huang
+      given-names: Wenyong
+    - family-names: Sun
+      given-names: Shuang
+    - family-names: Xiong
+      given-names: Zhicheng
+    - family-names: Zhang
+      given-names: Xiaotian
+    - family-names: Zhao
+      given-names: Shuya
+    - family-names: Wang
+      given-names: Yan
+    - family-names: Xu
+      given-names: Disheng
+    - family-names: Zhang
+      given-names: Wenwei
+    - family-names: Chen
+      given-names: Kai
+  journal: arXiv
+  year: 2026
+  doi: 10.48550/arXiv.2607.11849
+  url: https://arxiv.org/abs/2607.11849

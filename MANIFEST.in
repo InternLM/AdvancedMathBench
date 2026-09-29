@@ -1,0 +1,14 @@
+include README.md CITATION.cff citation.bib
+include data/README.md data/SHA256SUMS
+recursive-include assets *.svg *.png *.md
+recursive-include configs *.example.json
+recursive-include docs *.md
+recursive-include scripts *.sh
+recursive-include tests *.py
+recursive-include advancedmathbench/prompts *.md
+prune build
+prune dist
+prune models
+prune outputs
+prune .cache
+global-exclude *.py[cod] .DS_Store

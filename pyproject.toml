@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advancedmathbench"
+version = "0.1.0"
+description = "Standalone evaluation for advanced mathematical proof generation and verification"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["mathematics", "proof-generation", "proof-verification", "benchmark"]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2607.11849"
+"Hugging Face Paper" = "https://huggingface.co/papers/2607.11849"
+Dataset = "https://huggingface.co/datasets/debouter/AdvancedMathBench"
+AutoVerifier = "https://huggingface.co/debouter/AdvancedMathBench-AutoVerifier"
+
+[project.optional-dependencies]
+local = ["torch>=2.8", "transformers>=5.8.0,<6", "accelerate>=1", "sentencepiece>=0.2", "regex", "packaging"]
+hub = ["huggingface-hub>=1,<2"]
+
+[project.scripts]
+advancedmathbench = "advancedmathbench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["advancedmathbench*"]
+
+[tool.setuptools.package-data]
+advancedmathbench = ["prompts/*.md"]

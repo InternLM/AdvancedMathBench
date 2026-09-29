@@ -1,0 +1,19 @@
+{
+  "policy": {
+    "backend": "api",
+    "base_url": "https://YOUR_PROVIDER/v1",
+    "model": "YOUR_PROVER_MODEL",
+    "api_key_env": "POLICY_API_KEY",
+    "generation": {"temperature": 1.0, "max_tokens": 65536},
+    "timeout_s": 1800,
+    "max_retries": 2
+  },
+  "verifier": {
+    "backend": "api",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "model": "advancedmathbench-autoverifier",
+    "generation": {"temperature": 1.0, "max_tokens": 65536},
+    "timeout_s": 1800,
+    "max_retries": 2
+  }
+}
